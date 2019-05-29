@@ -38,6 +38,7 @@
 <div class="keywordbox w3-center">
     <h3>KEYWORDS:</h3>
     <div id="keywordlist">
+	    xml data goes here ion list form
         List the keywords in this div
     </div>
 </div>
