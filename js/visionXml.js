@@ -9,8 +9,10 @@ function anaylseVisionCall() {
     Request : "label,landscape,face,object,safe"
   })
   var fileName = document.getElementById("fileNameInput").value;
-  ajax_file_upload(fileName,'myVision.php');
+  
   document.getElementById("keywordlist").innerHTML = "Analying image please wait......";
+  //document.getElementById('drag_upload_file').innerHTML ="<img src=fileName width='500'></img>";
+  ajax_file_upload(fileName,'myVision.php');
            //loadfile();
   //formData.append(fileName,fileInputName.value)
    /* const xhttp = new XMLHttpRequest();

@@ -28,8 +28,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 //use Google\Cloud\Vision\V1\Feature;
 use Google\Cloud\Vision\V1\Feature\Type;
-
+//$dataresponse = array ();
 function collectImgSource () {
+    global $dataresponse;
     $fileName = "";
     $isLocal = FALSE;
     $isWeb = FALSE;
@@ -44,6 +45,7 @@ function collectImgSource () {
     
     if ( strchr($fileName,'http') != FALSE) {
         $isWeb = TRUE; 
+       // $dataresponse =  ['orignal' => $fileName ];
         return $fileName;    
      /*   }  elseif {   
      *check if it cloud based storage ie google storage (gs://(<-- maybe??))**
@@ -66,6 +68,7 @@ function collectImgSource () {
         $contents = file_get_contents($fileName,false);
         //fclose($fileName); // << file is left open error to be solved
         $fileX64 = base64_encode($contents); // convert file based image to basex64
+        //$dataresponse = ['orignal' => $fileName ];
      return $fileX64 ;
     }    
 }

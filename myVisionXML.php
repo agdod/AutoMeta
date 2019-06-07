@@ -310,12 +310,12 @@ if ($faces){
         $dir = __DIR__.$userGallery; 
         $xml->save($dir.$xml_outFile);
         //return $xml;
-        $dataresponse = array(
+        $dataresponse = [
             'status' => 'success',
             'name' => $xml_outFile,
-            'path' => $dir
-        ) ;
+            'path' => $dir] ;
         echo (json_encode($dataresponse));
+        $isImage = 1;
         exit();
        
 
