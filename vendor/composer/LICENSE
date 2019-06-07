@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+=======
+Format: https://www.debian.org/doc/packaging-manuals/copyright-format/1.0/
+>>>>>>> 2e6f9bede09758e867b44702c94a89869cdc322d
 Upstream-Name: Composer
 Upstream-Contact: Jordi Boggiano <j.boggiano@seld.be>
 Source: https://github.com/composer/composer
