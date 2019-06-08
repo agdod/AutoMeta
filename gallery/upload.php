@@ -1,5 +1,5 @@
 <?php
- include 'dbconnection.php';
+ include '../dbconnection.php';
 
 // Check if image file is a actual image or fake image
 if(isset($_POST["upload"])) {

@@ -1,5 +1,5 @@
 <?php
-include 'dbconnection.php';
+include '../dbconnection.php';
 //$db = new mysqli($host, $username, $passwd, $dbname);
 
 if ($db->connect_error) {
@@ -24,7 +24,14 @@ if (isset($_POST['searchbtn'])) {   //Check if search button has been pressed
             $msg = "$loc$img"; }
         }
     }
+    /**
+ * if (isset($kwd)) {
+ * $msg = 1 ;
+ * }
+ */
 }
+
+
 
 
 

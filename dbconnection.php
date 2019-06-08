@@ -1,5 +1,5 @@
 <?php
-session_start();
+
 // connect to database
 //$db = new mysqli('localhost', 'admin', 'Q2werty1234', 'autometa');
 
