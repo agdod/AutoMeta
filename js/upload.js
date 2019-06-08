@@ -20,7 +20,7 @@
     document.getElementById('selectfile').click();
     document.getElementById('selectfile').onchange = function() {
         fileobj = document.getElementById('selectfile').files[0];
-        document.getElementById('drag_upload_file').innerHTML =" <img src=file_obj width='500'></img>";
+       // document.getElementById('drag_upload_file').innerHTML =" <img src=file_obj width='500'></img>";
       ajax_file_upload(fileobj,'ajax.php');
     };
   }

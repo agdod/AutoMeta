@@ -16,7 +16,7 @@ namespace Google\Cloud\Samples\Auth;  /**** must be first line in code *****/
  * limitations under the License.
  */
 
-
+$creditials = '/MyProjectautometa-c02352214aa3.json' ; //file name of crediatials for autozising Vision
 // includes the autoloader for libraries installed with composer
 require __DIR__ . '/vendor/autoload.php';
 
@@ -28,9 +28,9 @@ use Google\Protobuf\Internal\GPBUtil;
 use Google\Cloud\Vision\V1\ImageAnnotatorClient;
 //use Google\Cloud\Vision\V1\Feature;
 use Google\Cloud\Vision\V1\Feature\Type;
-//$dataresponse = array ();
+
 function collectImgSource () {
-    global $dataresponse;
+    
     $fileName = "";
     $isLocal = FALSE;
     $isWeb = FALSE;
@@ -45,7 +45,7 @@ function collectImgSource () {
     
     if ( strchr($fileName,'http') != FALSE) {
         $isWeb = TRUE; 
-       // $dataresponse =  ['orignal' => $fileName ];
+       
         return $fileName;    
      /*   }  elseif {   
      *check if it cloud based storage ie google storage (gs://(<-- maybe??))**
@@ -61,15 +61,15 @@ function collectImgSource () {
       *  return $fileName;
     *}*/
     if ($isLocal) {
-        if ($isLocal && !($_POST["file"]) ) :
+        if ($isLocal && !isset($_POST["file"]) ) :
             $fileName = __DIR__ . "/uploads/$fileName";
         endif;
         //fopen($dir.$fileName,'r');
         $contents = file_get_contents($fileName,false);
         //fclose($fileName); // << file is left open error to be solved
-        $fileX64 = base64_encode($contents); // convert file based image to basex64
+        //$fileX64 = base64_encode($contents); // convert file based image to basex64
         //$dataresponse = ['orignal' => $fileName ];
-     return $fileX64 ;
+     return $contents ;
     }    
 }
 
@@ -128,7 +128,7 @@ function collectFeature() {
 }
 
 // instantiates new imageannotatorClient with credentails for authorising in .json
-$imageAnnotator =new ImageAnnotatorClient(['credentials'=>__DIR__.'/autopro-234567.json']);
+$imageAnnotator =new ImageAnnotatorClient(['credentials'=>__DIR__.'/MyProjectautometa-c02352214aa3.json']);
 
 //$imgSource = "https://images.pexels.com/photos/257540/pexels-photo-257540.jpeg";  //test image
 $imgSource = "";

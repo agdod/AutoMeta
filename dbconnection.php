@@ -1,5 +1,7 @@
 <?php
 session_start();
 // connect to database
-$db = mysqli_connect('localhost', 'admin', 'Q2werty1234', 'autometa');
+//$db = new mysqli('localhost', 'admin', 'Q2werty1234', 'autometa');
+
+$db = mysqli_connect('localhost', 'root', 'password', 'autmeta');
 ?>

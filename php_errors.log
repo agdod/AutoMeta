@@ -237,3 +237,19 @@ Stack trace:
 #0 /var/www/html/autometa/myVision.php(163): include()
 #1 {main}
   thrown in /var/www/html/autometa/myVisionXML.php on line 23
+[08-Jun-2019 12:31:51 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 12:32:02 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 12:34:00 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 12:55:55 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 12:57:59 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 13:00:04 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:00:14 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:01:36 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 13:03:30 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:03:52 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 13:04:55 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:07:00 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:07:15 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 13:09:20 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
+[08-Jun-2019 13:17:52 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 13:19:27 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64

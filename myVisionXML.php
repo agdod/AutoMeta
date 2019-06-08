@@ -14,7 +14,6 @@ $xml_fileInfo = $xml->createElement("Image");
 $xml_fileInfo->setAttribute("fileName","ImageFileName");
 $xml_fileInfo->setAttribute("location","FileImageLocation(local/web/GS");
 
-
 // gnerate keyword holding tag
 $xml_keyword = $xml->createElement("Keywords");
 
@@ -314,8 +313,9 @@ if ($faces){
             'status' => 'success',
             'name' => $xml_outFile,
             'path' => $dir] ;
+            
         echo (json_encode($dataresponse));
-        $isImage = 1;
+        
         exit();
        
 
