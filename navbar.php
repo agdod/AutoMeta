@@ -14,7 +14,7 @@
     <a href="index.php#recent" class="w3-bar-item w3-button w3-hide-small"></i>RECENTLY UPLOADED</a>
     <a href="index.php#about" class="w3-bar-item w3-button w3-hide-small"></i>ABOUT</a>
     <a href="gallery.php" class="w3-bar-item w3-button w3-hide-small"></i>GALLERY</a>
-    <a href="analyze.php" class="w3-bar-item w3-button w3-hide-small">ANALYZE IMAGE</a>
+    <a href="analyze.php" class="w3-bar-item w3-button w3-hide-small">ANALYSE IMAGE</a>
     <a href="gallery_upload.php" class="w3-bar-item w3-button w3-hide-small">UPLOAD IMAGE</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-teal">Language</a>
     <a href="register.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-green">Sign up</a>
@@ -29,7 +29,7 @@
     <a href="index.php#recent" class="w3-bar-item w3-button" onclick="toggleFunction()">RECENTLY UPLOADED</a>
     <a href="index.php#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
     <a href="gallery.php" class="w3-bar-item w3-button" onclick="toggleFunction()">GALLERY</a>
-    <a href="analyze.php" class="w3-bar-item w3-button" onclick="toggleFunction()">ANALYZE IMAGE</a>
+    <a href="analyze.php" class="w3-bar-item w3-button" onclick="toggleFunction()">ANALYSE IMAGE</a>
     <a href="gallery_upload.php" class="w3-bar-item w3-button" onclick="toggleFunction()">UPLOAD IMAGE</a>
     <a href="#" class="w3-bar-item w3-button">Login</a>
     <a href="#" class="w3-bar-item w3-button">Language</a>

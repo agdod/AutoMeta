@@ -1,9 +1,9 @@
 <?php 
 	include('functions.php');
 
-	/*if (!isLoggedIn()) {
-  *      header('location: login.php');
-	}*/
+	if (!isLoggedIn()) {
+        header('location: login.php');
+	}
     include('navbar.php') 
 ?>  
 <!DOCTYPE html>
@@ -23,7 +23,7 @@
 <!-- Container for title and info -->
 <div class="w3-padding-64">
     <div class="w3-center" style="margin-bottom:50px;">
-    <h1 class="w3-center">ANALYZE & UPLOAD A NEW IMAGE</h1>
+    <h1 class="w3-center">ANALYSE & UPLOAD A NEW IMAGE</h1>
     Here you can analyze and upload your images.
     </div>
 

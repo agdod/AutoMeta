@@ -20,7 +20,7 @@
   <p class="w3-center"><em>What it is & how it works</em></p>
   <div class="w3-row">
     <div class="w3-col m6 w3-center w3-padding-large">
-      <img src="images/demoimage.PNG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Demo Image" width="500" height="333">
+      <img src="images/demoimage.PNG" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Demo Image" width='700px' height='1500px'>
     </div>
 
     <div class="w3-col m6 w3-padding-large">
@@ -35,7 +35,28 @@
 </div>
 
 <!-- Container (Help) -->
+<div class="w3-content w3-container w3-padding-64" id="help">
+  <h3 class="w3-center">HELP HOW TO USE THIS PROJECT</h3>
+  <p class="w3-center"><em>video demo of the site</em></p>
+</div>
 
+
+<!-- Harmaa välipalkki -->
+<div class="bar">
+</div>
+
+<!-- Container (Recent Uploaded) -->
+<div class="w3-content w3-container w3-padding-64" id="recent">
+  <h3 class="w3-center">Here will be displayed a mini gallery of recent uploaded and analysed images</h3>
+  <p class="w3-center"><em>coming soon</em></p>
+</div>
+
+
+<!-- Harmaa välipalkki -->
+<div class="bar">
+</div>
+
+<!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64 w3-center" id="about">
   <h3 class="w3-center">ABOUT THIS PROJECT</h3>
   <p class="w3-center"><em>What is this?</em></p>
@@ -63,15 +84,6 @@ Jouko Hyle <a href="https://www.linkedin.com/in/joukohyle/">LinkedIn</a>
 
 </div>
 
-<!-- Harmaa välipalkki -->
-<div class="bar">
-</div>
-
-<!-- Container (About Section) -->
-<div class="w3-content w3-container w3-padding-64" id="about">
-  <h3 class="w3-center">ABOUT THIS PROJECT</h3>
-  <p class="w3-center"><em>Info about us and the project</em></p>
-</div>
 
 <!-- Footer -->
 <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
