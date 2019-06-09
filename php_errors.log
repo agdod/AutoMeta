@@ -259,3 +259,9 @@ Stack trace:
 [08-Jun-2019 20:43:35 Europe/Helsinki] PHP Notice:  Undefined index: fileToUpload in /var/www/html/autometa/upload.php on line 24
 [09-Jun-2019 06:46:43 Europe/Helsinki] PHP Notice:  Undefined index: user in /var/www/html/autometa/success.php on line 21
 [09-Jun-2019 06:46:44 Europe/Helsinki] PHP Notice:  Undefined index: verified in /var/www/html/autometa/success.php on line 47
+[09-Jun-2019 13:04:04 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /var/www/html/autometa/search.php on line 20
+[09-Jun-2019 13:08:10 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /var/www/html/autometa/search.php on line 20
+[09-Jun-2019 13:08:20 Europe/Helsinki] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, boolean given in /var/www/html/autometa/search.php on line 20
+[09-Jun-2019 15:23:14 Europe/Helsinki] PHP Notice:  Undefined index: user in /var/www/html/autometa/success.php on line 21
+[09-Jun-2019 15:23:14 Europe/Helsinki] PHP Notice:  Undefined index: verified in /var/www/html/autometa/success.php on line 47
+[09-Jun-2019 15:50:51 Europe/Helsinki] PHP Notice:  Undefined variable: server in /var/www/html/autometa/sendEmails.php on line 12

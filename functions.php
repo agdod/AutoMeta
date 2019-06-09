@@ -1,6 +1,7 @@
 <?php 
 	session_start();
-	include ('dbconnection.php');
+	include 'dbconnection.php';
+	include 'sendEmails.php';
 
 	// variable declaration
 	$username = "";
@@ -81,7 +82,7 @@
 						  VALUES('$username', '$email', '$token', '$user_type', '$password')";
 				mysqli_query($db, $query);
 				$_SESSION['success']  = "New user successfully created!!";
-				header('location: /admin/home.php');
+				header('location: admin/home.php');
 			}else{
 				$query = "INSERT INTO users (username, email, token, user_type, password) 
 						  VALUES('$username', '$email', '$token', 'user', '$password')";
@@ -99,9 +100,9 @@
 				$_SESSION['user'] = getUserById($logged_in_user_id); // put logged in user in session
 				$_SESSION['success']  = "You are now logged in";
 				$_SESSION['verified'] = FALSE;
-				header('location: /success.php');			
+				header('location: success.php');			
 
-					header('location: /success.php');
+					header('location: success.php');
 				} else {
 					$_SESSION['error_msg'] = "Database error: Could not register user";
 				}													//End of comment for testing logging in without e-mail
@@ -206,11 +207,11 @@
 					$_SESSION['user'] = $logged_in_user;
 					$_SESSION['success']  = "You are now logged in";
 					$_SESSION['verified'] = TRUE;  // <--This sets admin as verified user without the email verification
-					header('location: /admin/home.php');		  
+					header('location: admin/home.php');		  
 				}elseif ($logged_in_user['user_type'] == 'user') {
 					$_SESSION['user'] = $logged_in_user;
 					$_SESSION['success']  = "You are now logged in";
-					header('location: /success.php');
+					header('location: success.php');
 					// checks if logged in basic user is verified
 						if ($logged_in_user['verified'] == '0') {
 							$_SESSION['verified'] = FALSE;
@@ -310,7 +311,7 @@ if (isset($_POST['reset-password'])) {
     $subject = "Request to reset password";
 	$msg = '
 We have received a request to reset your password on AutoMeta. If you did not do this, you can just ignore this message.
-If you did send the request, you can reset your password by clicking this link http://localhost/reset2.php?token=' . $token2 . ' or copy it into your browsers address bar.
+If you did send the request, you can reset your password by clicking this link http://'.$server.'/reset2.php?token=' . $token2 . ' or copy it into your browsers address bar.
 
 Greetings,
 the AutoMeta team

@@ -22,7 +22,7 @@ All the images in the gallery are shown by default.<br>
 Enter a keyword into the field to search images with that keyword assigned to it.<br>
 To look at all the images in the gallery after a search, press "Clear search".</div>
 
-<form action="index.php" method="post">
+<form action="gallery.php" method="post">
 <input style="width:50%; margin-top:20px; margin-bottom:40px;" type="text" placeholder="Keyword you want to find images with" name="kwd" id="kwd">
 <input type="submit" value="Search" name="searchbtn">
 <input type="submit" value="Clear search" name="clearsearch">

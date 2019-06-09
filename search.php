@@ -21,7 +21,7 @@ if (isset($_POST['searchbtn'])) {   //Check if search button has been pressed
             foreach ($row as $msg) {
             $loc = $row['location'];
             $img = $row['imgname'];
-            $msg = "$loc$img"; }
+            $msg = $loc.$img; }
         }
     }
     /**

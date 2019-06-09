@@ -21,7 +21,7 @@
     document.getElementById('selectfile').onchange = function() {
         fileobj = document.getElementById('selectfile').files[0];
        // document.getElementById('drag_upload_file').innerHTML =" <img src=file_obj width='500'></img>";
-      ajax_file_upload(fileobj,'ajax.php');
+      ajax_file_upload(fileobj,'callvision.php');
     };
   }
  
@@ -44,14 +44,13 @@
             //invlaid file format
             $("#err").html("Invalid File!").fadeIn();
           }
-          else {
-            //var name = obj_response.orignal;
-              
+          else {  
             //view upload file.
             //$("#preview").html('<img src="' +obj_response.path+'">').fadeIn();
             //$("#file_name").html(response).fadeIn();
             //$("#form")[0].rest();
             loadfile(obj_response.path,obj_response.name);
+            $('#selectfile').val('');
           }
           //alert(response);
           //$('#selectfile').val('');

@@ -292,12 +292,14 @@ if ($faces){
         
         include "gen_xmlFileName.php";
         if (isset($_FILES['file']['name'])) :
+            $orignalFileName = $_FILES['file']['name'];
             $xml_outFile = generate_XmlFileName($_FILES['file']['name']);
         endif;
         if (isset($_POST["file"])) :
-                $xml_outFile = generate_XmlFileName($_POST["file"]);
+            $orignalFileName = $_POST['file'];
+            $xml_outFile = generate_XmlFileName($_POST['file']);        
         endif;
-        if (!isset($_FILES['file']['name']) && !isset($_POST["file"]) ) :
+        if (!isset($_FILES['file']['name']) && !isset($_POST['file']) ) :
              $xml_outFile = "demo.xml";
         endif;
         $xml->saveXML(); 
@@ -312,7 +314,8 @@ if ($faces){
         $dataresponse = [
             'status' => 'success',
             'name' => $xml_outFile,
-            'path' => $dir] ;
+            'path' => $dir,
+            'origImg' => $orignalFileName ];
             
         echo (json_encode($dataresponse));
         
