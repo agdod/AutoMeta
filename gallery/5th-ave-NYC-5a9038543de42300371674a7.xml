@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Image fileName="ImageFileName" location="FileImageLocation(local/web/GS">
+  <Safe_Search Adult="Very Unlikely" Spoof="Very Unlikely" Medical="Very Unlikely" Violence="Very Unlikely" Racy="Very Unlikely"/>
+  <Labels>
+    <labelItem accuracy="98.45">Urban area</labelItem>
+    <labelItem accuracy="97.42">Taxi</labelItem>
+    <labelItem accuracy="97.34">City</labelItem>
+    <labelItem accuracy="96.46">Metropolitan area</labelItem>
+    <labelItem accuracy="96.13">Metropolis</labelItem>
+    <labelItem accuracy="96.1">Yellow</labelItem>
+    <labelItem accuracy="94.05">Vehicle</labelItem>
+    <labelItem accuracy="93.45">Landmark</labelItem>
+    <labelItem accuracy="92.63">Human settlement</labelItem>
+    <labelItem accuracy="92.59">Transport</labelItem>
+  </Labels>
+  <Landmarks/>
+  <Objects>
+    <objectItem accuracy="91.25">Car<vertices verticesXY="0.5122262,0.97172236"/></objectItem>
+    <objectItem accuracy="83.44">Car<vertices verticesXY="0.093438625,0.89588135"/></objectItem>
+  </Objects>
+  <faces/>
+  <Keywords>
+    <KeyItem>Urban area</KeyItem>
+    <KeyItem>Taxi</KeyItem>
+    <KeyItem>City</KeyItem>
+    <KeyItem>Metropolitan area</KeyItem>
+    <KeyItem>Metropolis</KeyItem>
+    <KeyItem>Yellow</KeyItem>
+    <KeyItem>Vehicle</KeyItem>
+    <KeyItem>Landmark</KeyItem>
+    <KeyItem>Human settlement</KeyItem>
+    <KeyItem>Transport</KeyItem>
+    <KeyItem>Car</KeyItem>
+    <KeyItem>Car</KeyItem>
+  </Keywords>
+</Image>

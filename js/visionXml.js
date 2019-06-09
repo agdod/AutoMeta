@@ -10,7 +10,7 @@ function anaylseVisionCall() {
   })
   var fileName = document.getElementById("fileNameInput").value;
   
-  document.getElementById("keywordlist").innerHTML = "Analying image please wait......";
+  document.getElementById("keywordlist").innerHTML = "Analying image please wait......<br/><div class='loader'></div>";
   //document.getElementById('drag_upload_file').innerHTML ="<img src=fileName width='500'></img>";
   ajax_file_upload(fileName,'myVision.php');
            //loadfile();

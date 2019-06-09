@@ -12,7 +12,7 @@
     e.preventDefault();
     for (i = 0;i<e.dataTransfer.files.length; i++){
     fileobj = e.dataTransfer.files[i];
-    ajax_file_upload(fileobj);
+    ajax_file_upload(fileobj,'callvision.php');
   }
   }
  
@@ -20,8 +20,11 @@
     document.getElementById('selectfile').click();
     document.getElementById('selectfile').onchange = function() {
         fileobj = document.getElementById('selectfile').files[0];
-       // document.getElementById('drag_upload_file').innerHTML =" <img src=file_obj width='500'></img>";
+        var imagePreview = "<img src='gallery/"+fileobj.name+"' width='350'></img>";
+       //document.getElementById('drag_upload_file').innerHTML = imagePreview;
+       document.getElementById("keywordlist").innerHTML = "Analying image please wait......<br/><div class='loader'></div>";
       ajax_file_upload(fileobj,'callvision.php');
+      document.getElementById('drag_upload_file').innerHTML = imagePreview;
     };
   }
  

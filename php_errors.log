@@ -265,3 +265,6 @@ Stack trace:
 [09-Jun-2019 15:23:14 Europe/Helsinki] PHP Notice:  Undefined index: user in /var/www/html/autometa/success.php on line 21
 [09-Jun-2019 15:23:14 Europe/Helsinki] PHP Notice:  Undefined index: verified in /var/www/html/autometa/success.php on line 47
 [09-Jun-2019 15:50:51 Europe/Helsinki] PHP Notice:  Undefined variable: server in /var/www/html/autometa/sendEmails.php on line 12
+[09-Jun-2019 18:17:52 Europe/Helsinki] PHP Notice:  Undefined index: user in /var/www/html/autometa/success.php on line 21
+[09-Jun-2019 18:18:23 Europe/Helsinki] PHP Notice:  Undefined variable: server in /var/www/html/autometa/sendEmails.php on line 12
+[09-Jun-2019 18:34:13 Europe/Helsinki] PHP Notice:  Undefined variable: server in /var/www/html/autometa/sendEmails.php on line 12
