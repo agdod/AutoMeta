@@ -1,7 +1,7 @@
 <?php
 include 'functions.php';
 include 'navbar.php';
-include 'dbconnection.php'
+include 'dbconnection.php';
 //session_start();
 
 
