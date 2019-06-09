@@ -1,4 +1,4 @@
-function displayXml(xml){
+function displayXml(xml,viewit){
 
     const xmlDoc = xml.responseXML;
     const keyWordNode = xmlDoc.getElementsByTagName("Keywords");
@@ -10,7 +10,7 @@ function displayXml(xml){
  }
             //myList +="<li>" + xx[i].nodeValue + "</li>";
         }
-    myList += "</ul><br/> File Annalsyed succesfully";
+    myList += "</ul><br/> File Annalsyed succesfully"+viewit;
     document.getElementById("keywordlist").innerHTML = myList;
 
 }
@@ -29,8 +29,9 @@ if (window.XMLHttpRequest) {
 
 clientXml.onreadystatechange = function() {
   if (this.readyState == 4 && this.status == 200) {
+    var viewxml = "<p><a href= '"+path+file+"'>View XML file  :"+path+file+"</a><p>";
    /*document.getElementById("keywordList").innerHTML = this.responseText;*/ 
-   displayXml(this);
+   displayXml(this,viewxml);
   } else  { 
     document.getElementById("keywordlist").innerHTML = "file status : readystate : " + this.statusText ; 
   }
@@ -38,4 +39,5 @@ clientXml.onreadystatechange = function() {
 
 clientXml.open("GET",path+file,true);
 clientXml.send();
+
 }
