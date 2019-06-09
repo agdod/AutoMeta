@@ -253,3 +253,9 @@ Stack trace:
 [08-Jun-2019 13:09:20 Europe/Helsinki] PHP Warning:  mysqli_connect(): (HY000/1049): Unknown database 'autometa' in /var/www/html/autometa/dbconnection.php on line 6
 [08-Jun-2019 13:17:52 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
 [08-Jun-2019 13:19:27 Europe/Helsinki] PHP Notice:  Undefined index: file in /var/www/html/autometa/myVision.php on line 64
+[08-Jun-2019 20:20:21 Europe/Helsinki] PHP Warning:  include(../dbconnection.php): failed to open stream: No such file or directory in /var/www/html/autometa/gallery/search.php on line 2
+[08-Jun-2019 20:20:21 Europe/Helsinki] PHP Warning:  include(): Failed opening '../dbconnection.php' for inclusion (include_path='.:/usr/share/php') in /var/www/html/autometa/gallery/search.php on line 2
+[08-Jun-2019 20:43:35 Europe/Helsinki] PHP Notice:  Undefined index: fileToUpload in /var/www/html/autometa/upload.php on line 4
+[08-Jun-2019 20:43:35 Europe/Helsinki] PHP Notice:  Undefined index: fileToUpload in /var/www/html/autometa/upload.php on line 24
+[09-Jun-2019 06:46:43 Europe/Helsinki] PHP Notice:  Undefined index: user in /var/www/html/autometa/success.php on line 21
+[09-Jun-2019 06:46:44 Europe/Helsinki] PHP Notice:  Undefined index: verified in /var/www/html/autometa/success.php on line 47

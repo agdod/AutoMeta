@@ -1,5 +1,5 @@
 <?php
-include '../dbconnection.php';
+include 'dbconnection.php';
 //$db = new mysqli($host, $username, $passwd, $dbname);
 
 if ($db->connect_error) {

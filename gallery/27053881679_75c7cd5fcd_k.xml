@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Image fileName="ImageFileName" location="FileImageLocation(local/web/GS">
+  <Safe_Search Adult="Very Unlikely" Spoof="Unlikely" Medical="Unlikely" Violence="Very Unlikely" Racy="Very Unlikely"/>
+  <Labels>
+    <labelItem accuracy="98.9">Mammal</labelItem>
+    <labelItem accuracy="98.58">Rat</labelItem>
+    <labelItem accuracy="98.51">Vertebrate</labelItem>
+    <labelItem accuracy="98.44">Mouse</labelItem>
+    <labelItem accuracy="95.26">meadow jumping mouse</labelItem>
+    <labelItem accuracy="95.01">Muridae</labelItem>
+    <labelItem accuracy="93.75">Muroidea</labelItem>
+    <labelItem accuracy="89.12">Rodent</labelItem>
+    <labelItem accuracy="86.08">Pest</labelItem>
+    <labelItem accuracy="85.66">Fare</labelItem>
+  </Labels>
+  <Landmarks/>
+  <Objects>
+    <objectItem accuracy="75.51">Mouse<vertices verticesXY="0.05400001,0.89"/></objectItem>
+    <objectItem accuracy="72.18">Animal<vertices verticesXY="0.05400001,0.89"/></objectItem>
+  </Objects>
+  <faces/>
+  <Keywords>
+    <KeyItem>Mammal</KeyItem>
+    <KeyItem>Rat</KeyItem>
+    <KeyItem>Vertebrate</KeyItem>
+    <KeyItem>Mouse</KeyItem>
+    <KeyItem>meadow jumping mouse</KeyItem>
+    <KeyItem>Muridae</KeyItem>
+    <KeyItem>Muroidea</KeyItem>
+    <KeyItem>Rodent</KeyItem>
+    <KeyItem>Pest</KeyItem>
+    <KeyItem>Fare</KeyItem>
+    <KeyItem>Mouse</KeyItem>
+    <KeyItem>Animal</KeyItem>
+  </Keywords>
+</Image>

@@ -1,16 +1,16 @@
 <?php 
-    include '../functions.php';
+    include 'functions.php';
     include 'upload.php';
 
 	if (!isLoggedIn()) {
-        header('location: ../login.php');
+        header('location: login.php');
   }
   elseif (isLoggedIn() && $_SESSION['verified'] == FALSE) {
-    header('location: ../success.php');
+    header('location: success.php');
   }
 ?>
 <!DOCTYPE html>
-<?php include('../navbar.php') ?>		
+<?php include('navbar.php') ?>		
 <html>
 <head>
 	<title>AutoMeta - Upload</title>
@@ -40,7 +40,7 @@
 if (isset($display)) {
 
 echo "<div class='imgbox'>";
-echo "<p><a href='Gallerie.php'><img src='gallery/$name' width='500'></a></p>";
+echo "<p><a href='index.php'><img src='gallery/$name' width='500'></a></p>";
 echo "</div>";
 echo "<h5 class='w3-center'>". basename( $_FILES["fileToUpload"]["name"]). " has been uploaded to gallery.</h5>";
 }elseif (empty($display)) {

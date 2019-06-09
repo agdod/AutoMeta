@@ -267,8 +267,8 @@
 
 // Check if user is logged in as admin or basic user or not at all, and display the ADMIN/USER button or nothing
 	function usradmn() {
-			$admnbtn = '<a href="/admin/home.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">ADMIN</a>'; // Admin button
-			$usrbtn = '<a href="/success.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">USER</a>'; // Admin button
+			$admnbtn = '<a href="admin/home.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">ADMIN</a>'; // Admin button
+			$usrbtn = '<a href="success.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">USER</a>'; // Admin button
 			if (isAdmin() == true){
 				echo $admnbtn;
 			}

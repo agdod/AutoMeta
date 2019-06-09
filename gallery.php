@@ -1,7 +1,7 @@
 <?php
- include '../functions.php' ;
+ include 'functions.php' ;
+ include 'navbar.php';
  include 'search.php' ;
- include '../navbar.php';
 ?>	
 <!DOCTYPE html>	
 <html>
@@ -9,7 +9,7 @@
 	<title>AutoMeta - Gallery</title>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" type="text/css" href="gallerystyle.css">
+  <link rel="stylesheet" type="text/css" href="css/gallerystyle.css">
 </head>
 <body>
 
@@ -22,7 +22,7 @@ All the images in the gallery are shown by default.<br>
 Enter a keyword into the field to search images with that keyword assigned to it.<br>
 To look at all the images in the gallery after a search, press "Clear search".</div>
 
-<form action="Gallerie.php" method="post">
+<form action="index.php" method="post">
 <input style="width:50%; margin-top:20px; margin-bottom:40px;" type="text" placeholder="Keyword you want to find images with" name="kwd" id="kwd">
 <input type="submit" value="Search" name="searchbtn">
 <input type="submit" value="Clear search" name="clearsearch">
@@ -152,6 +152,6 @@ echo"</div>";
 ?>
 </div>
   </div>
-<script type="text/javascript" src="lightbox.js"></script>
+<script type="text/javascript" src="js/lightbox.js"></script>
 </body>
 </html>
