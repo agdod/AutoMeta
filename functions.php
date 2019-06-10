@@ -82,7 +82,7 @@
 						  VALUES('$username', '$email', '$token', '$user_type', '$password')";
 				mysqli_query($db, $query);
 				$_SESSION['success']  = "New user successfully created!!";
-				header('location: admin/home.php');
+				header('location: admin_home.php');
 			}else{
 				$query = "INSERT INTO users (username, email, token, user_type, password) 
 						  VALUES('$username', '$email', '$token', 'user', '$password')";
@@ -207,7 +207,7 @@
 					$_SESSION['user'] = $logged_in_user;
 					$_SESSION['success']  = "You are now logged in";
 					$_SESSION['verified'] = TRUE;  // <--This sets admin as verified user without the email verification
-					header('location: admin/home.php');		  
+					header('location: admin_home.php');		  
 				}elseif ($logged_in_user['user_type'] == 'user') {
 					$_SESSION['user'] = $logged_in_user;
 					$_SESSION['success']  = "You are now logged in";
@@ -268,7 +268,7 @@
 
 // Check if user is logged in as admin or basic user or not at all, and display the ADMIN/USER button or nothing
 	function usradmn() {
-			$admnbtn = '<a href="admin/home.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">ADMIN</a>'; // Admin button
+			$admnbtn = '<a href="admin_home.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">ADMIN</a>'; // Admin button
 			$usrbtn = '<a href="success.php" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-black">USER</a>'; // Admin button
 			if (isAdmin() == true){
 				echo $admnbtn;
@@ -316,7 +316,7 @@ If you did send the request, you can reset your password by clicking this link h
 Greetings,
 the AutoMeta team
 	';
-    $headers = "From: AutoMeta@autometa.com" . "\r\n" .
+    $headers = "From: AutoMeta@".$server . "\r\n" .
 	'X-Mailer: PHP/' . phpversion();
     mail($to, $subject, $msg, $headers);
     header('location: pending.php?email=' . $email);
@@ -358,7 +358,7 @@ If you did, you are registered as ' . $name . ' into AutoMeta.
 Greetings,
 the AutoMeta team
 ';
-	$headers = "From: AutoMeta@autometa.com" . "\r\n" .
+	$headers = "From: AutoMeta@$".$server . "\r\n" .
 'X-Mailer: PHP/' . phpversion();
 	mail($to, $subject, $msg, $headers);
 	header('location: pendingname.php?email=' . $email);

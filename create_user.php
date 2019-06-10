@@ -1,15 +1,15 @@
-<?php include('../functions.php');
+<?php include('functions.php');
 
 if (!isAdmin()) {
 	$_SESSION['msg'] = "You must log in first";
-	header('location: ../login.php');
+	header('location: login.php');
 }
 ?>
 <!DOCTYPE html>
-<?php include('../navbar.php');?>
+<?php include('navbar.php');?>
 <html>
 <head>
-	<title>AutoMeta - Admin/Create User</title>
+	<title>AutoMeta - Admin --> Create User</title>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/formstyle.css"> <!--MUST BE INCLUDED ONLY WITH FILES THAT CONTAIN FORMS-->

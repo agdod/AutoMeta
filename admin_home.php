@@ -1,13 +1,13 @@
 <?php 
-	include('../functions.php');
+	include('functions.php');
 
 	if (!isAdmin()) {
 		$_SESSION['msg'] = "You must log in first";
-		header('location: ../login.php');
+		header('location: login.php');
 	}
 ?>
 <!DOCTYPE html>
-<?php include('../navbar.php')?>
+<?php include('navbar.php')?>
 <html>
 <head>
 	<title>AutoMeta - Admin Controls</title>
