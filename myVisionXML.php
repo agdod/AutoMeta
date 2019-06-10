@@ -201,9 +201,9 @@ if ($faces){
         //printf("Joy: " . "<BR/>" .  $likeliHood[$joy]);
         $surprise = $face->getSurpriseLikelihood();
          // add a setting to adjust the at what %accuracy a keyword is added to the xml file automatically
-         if ($surpise>3) : addKeyWord("Emotion Surpise"); endif;
-        $xml_faceEmotion = $xml->createElement("emotion","Surpise");
-        $xml_faceEmotion->setAttribute("Surpise",$likeliHood[$surpise]);
+         if ($surprise >3) : addKeyWord("Emotion Surprise"); endif;
+        $xml_faceEmotion = $xml->createElement("emotion","Surprise");
+        $xml_faceEmotion->setAttribute("Surprise",$likeliHood[$surprise]);
         $xml_faceEmotionProb->appendChild($xml_faceEmotion);
         //printf("Surprise: " . "<BR/>" .  $likeliHood[$surprise]);
         $sorrow = $face->getSorrowLikelihood();
@@ -213,7 +213,7 @@ if ($faces){
         $xml_faceEmotion->setAttribute("Sorrow",$likeliHood[$sorrow]);
         $xml_faceEmotionProb->appendChild($xml_faceEmotion);
         //Output sorrow
-        $headwear = $face->getwearHeadwearLikelihood();
+        $headwear = $face->getHeadwearLikelihood();
          // add a setting to adjust the at what %accuracy a keyword is added to the xml file automatically
          if ($headwear>3) : addKeyWord("Headwear"); endif;
         $xml_faceEmotion = $xml->createElement("emotion","Wearing headwear");
