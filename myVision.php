@@ -62,7 +62,7 @@ function collectImgSource () {
     *}*/
     if ($isLocal) {
         if ($isLocal && !isset($_POST["file"]) ) :
-            $fileName = __DIR__ . "/uploads/$fileName";
+            $fileName = __DIR__ . "/gallery/$fileName";
         endif;
         //fopen($dir.$fileName,'r');
         $contents = file_get_contents($fileName,false);
