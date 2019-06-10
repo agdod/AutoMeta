@@ -20,11 +20,11 @@
     document.getElementById('selectfile').click();
     document.getElementById('selectfile').onchange = function() {
         fileobj = document.getElementById('selectfile').files[0];
-        var imagePreview = "<img src='gallery/"+fileobj.name+"' width='350'></img>";
+        document.getElementById('drag_upload_file').innerHTML = "<div class='loader'></div>";
        //document.getElementById('drag_upload_file').innerHTML = imagePreview;
        document.getElementById("keywordlist").innerHTML = "Analying image please wait......<br/><div class='loader'></div>";
       ajax_file_upload(fileobj,'callvision.php');
-      document.getElementById('drag_upload_file').innerHTML = imagePreview;
+      document.getElementById('drag_upload_file').innerHTML = "<img src='gallery/"+fileobj.name+"' width='350'></img>";
     };
   }
  

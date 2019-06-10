@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Image fileName="ImageFileName" location="FileImageLocation(local/web/GS">
+  <Safe_Search Adult="Very Unlikely" Spoof="Very Unlikely" Medical="Very Unlikely" Violence="Possible" Racy="Possible"/>
+  <Labels>
+    <labelItem accuracy="98.1">Dinosaur</labelItem>
+    <labelItem accuracy="94.16">Tyrannosaurus</labelItem>
+    <labelItem accuracy="93.76">Velociraptor</labelItem>
+    <labelItem accuracy="90.82">Terrestrial animal</labelItem>
+    <labelItem accuracy="71.52">Organism</labelItem>
+    <labelItem accuracy="68.8">Grass</labelItem>
+    <labelItem accuracy="67.95">Mouth</labelItem>
+    <labelItem accuracy="67.62">Wildlife</labelItem>
+    <labelItem accuracy="66.97">Adaptation</labelItem>
+    <labelItem accuracy="58.55">Plant</labelItem>
+  </Labels>
+  <Landmarks/>
+  <Objects>
+    <objectItem accuracy="67.68">Dinosaur<vertices verticesXY="0.0032405183,0.97955817"/></objectItem>
+    <objectItem accuracy="61.7">Animal<vertices verticesXY="0.0032405183,0.97955817"/></objectItem>
+    <objectItem accuracy="60.93">Animal<vertices verticesXY="0.059030052,0.9934655"/></objectItem>
+    <objectItem accuracy="57.42">Dinosaur<vertices verticesXY="0.059030052,0.9934655"/></objectItem>
+  </Objects>
+  <faces/>
+  <Keywords>
+    <KeyItem>Dinosaur</KeyItem>
+    <KeyItem>Tyrannosaurus</KeyItem>
+    <KeyItem>Velociraptor</KeyItem>
+    <KeyItem>Terrestrial animal</KeyItem>
+    <KeyItem>Organism</KeyItem>
+    <KeyItem>Grass</KeyItem>
+    <KeyItem>Mouth</KeyItem>
+    <KeyItem>Wildlife</KeyItem>
+    <KeyItem>Adaptation</KeyItem>
+    <KeyItem>Plant</KeyItem>
+    <KeyItem>Dinosaur</KeyItem>
+    <KeyItem>Animal</KeyItem>
+    <KeyItem>Animal</KeyItem>
+    <KeyItem>Dinosaur</KeyItem>
+  </Keywords>
+</Image>
