@@ -8,6 +8,18 @@
 
 // drag and drop javascript
   var fileobj;
+  var control = document.getElementById("dragNdrop");
+  control.addEventListener("change", function(event){
+    var i=0,
+     files = control.files,
+      len = files.length;
+      for (; i<len; i++) {
+        console.log("filename : " +files[i].name);
+        console.log("@Type  :" + files[i].type);
+        console.log("size: " + files[i].size+"bytes");
+      }
+  },false);
+
   function upload_file(e) {
     e.preventDefault();
     for (i = 0;i<e.dataTransfer.files.length; i++){
@@ -16,17 +28,25 @@
   }
   }
  
-  function file_explorer() {
-    document.getElementById('selectfile').click();
-    document.getElementById('selectfile').onchange = function() {
-        fileobj = document.getElementById('selectfile').files[0];
-        document.getElementById('drag_upload_file').innerHTML = "<div class='loader'></div>";
-       //document.getElementById('drag_upload_file').innerHTML = imagePreview;
+  function file_explorer(input) {
+   alert("you click the div");
+        var reader = new FileReader (input)
+        reader.onload = function(event) {
+        var dataUri = event.target.result;
+          img = document.createElement("img");
+          img.src = dataUri
+          document.getElementById('drop_file_zone').appendChild(img);
+        };
+    reader.onerror = function(event) {
+      console.error("file could not be read code" + event.target.error.code);
+    };
+  reader.readAsDataUri(file);//innerHTML = "<div class='loader'></div>";
+      
+        
        document.getElementById("keywordlist").innerHTML = "Analying image please wait......<br/><div class='loader'></div>";
       ajax_file_upload(fileobj,'callvision.php');
-      document.getElementById('drag_upload_file').innerHTML = "<img src='gallery/"+fileobj.name+"' width='350'></img>";
     };
-  }
+  
  
   function ajax_file_upload(file_obj,action) {
     if(file_obj != undefined) {
